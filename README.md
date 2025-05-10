@@ -1,70 +1,92 @@
-# Getting Started with Create React App
+# 🎬 Movie Explorer – Discover Your Favorite Films
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A responsive, modern React web app to explore trending and popular movies using The Movie Database (TMDb) API. Includes search, filtering, favorites, dark/light mode, and more.
 
-## Available Scripts
+## 🌟 Live Demo
 
-In the project directory, you can run:
+👉 [View Live on netlify](https://681f99f032fbf162de5f3e44--singular-douhua-2300f2.netlify.app/)  
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+##  Default Credentials
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Use these to log in:
+- **Username**: `user1`
+- **Password**: `1234`
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+##  Features
 
-### `npm run build`
+ Trending movies listing  
+ Search with real-time results  
+ Genre-based filtering  
+ Light/Dark theme toggle  
+ Add/Remove favorites (with persistence using localStorage)  
+ Infinite scroll functionality  
+ Responsive design (Mobile-first)  
+ Logout and session management  
+ Trailer preview with YouTube embedding  
+ Error handling & validation  
+ Last search persistence
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+##  Tech Stack
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Frontend**: React, React Router, Material UI (MUI)
+- **State Management**: React Context API
+- **API**: [TMDb API](https://www.themoviedb.org/)
+- **Deployment**: Vercel / Netlify
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+##  How to Run Locally
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. **Clone the repository**
+   ```bash
+   git clone https://gitlab.com/your-username/movie-explorer.git
+   cd movie-explorer
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. **Install dependencies**
+     npm install
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3. **Create file in the root**
+    REACT_APP_TMDB_API_KEY=your_tmdb_api_key
 
-## Learn More
+4. **Run the app**
+   Run the app
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+5. **Visit in browser**
+Navigate to http://localhost:3000
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+##  TMDb API Usage
+The app uses the TMDb API to fetch:
+Trending movies
+Genre list
+Movie search results
+Movie details including YouTube trailer links
 
-### Code Splitting
+You must sign up at TMDb to get a free API key.
+Paste your API key into the .env file as shown above.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Deployment (netlify)
+Recommended: Use Vercel for easy React deployment.
 
-### Analyzing the Bundle Size
+Step-by-step:
+1. Push your project to GitLab or GitHub.
+2. Go to vercel.com, log in, and click "New Project".
+3. Import your Git repo.
+4. Set the environment variable during setup:
+    Key: REACT_APP_TMDB_API_KEY
+Value: your_tmdb_api_key
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+5. Click Deploy – your live site will be ready in seconds.
+You can also use Netlify similarly.
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Deliverables
+ GitLab Repo with well-structured, commented code
+ Responsive UI
+ Full feature set
+ usage for API key
+ Complete README.md
+ Live deployment link (netlify )
