@@ -84,7 +84,7 @@ Value: your_tmdb_api_key
 You can also use Netlify similarly.
 
 ## Deliverables
- GitLab Repo with well-structured, commented code
+ Github Repo with well-structured, commented code
  Responsive UI
  Full feature set
  usage for API key
